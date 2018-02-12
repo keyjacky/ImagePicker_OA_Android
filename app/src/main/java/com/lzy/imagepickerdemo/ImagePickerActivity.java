@@ -64,10 +64,14 @@ public class ImagePickerActivity extends AppCompatActivity implements SeekBar.On
     private EditText et_outputx;
     private EditText et_outputy;
 
+    private TestActivity testActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_picker);
+
+
 
         imagePicker = ImagePicker.getInstance();
         imagePicker.setImageLoader(new GlideImageLoader());
@@ -160,7 +164,8 @@ public class ImagePickerActivity extends AppCompatActivity implements SeekBar.On
                 startActivityForResult(intent, 100);
                 break;
             case R.id.btn_wxDemo:
-                startActivity(new Intent(this, WxDemoActivity.class));
+//                startActivity(new Intent(this, WxDemoActivity.class));
+                startActivity(new Intent(this, TestActivity.class));
                 break;
         }
     }

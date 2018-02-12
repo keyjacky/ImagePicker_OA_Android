@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="48dp"
-    android:background="@color/ip_color_primary"
+    android:background="#FFFFFF"
     android:clickable="true">
 
     <ImageView
@@ -15,13 +15,13 @@
         android:padding="12dp"
         app:srcCompat="@drawable/ic_arrow_back" />
 
-    <View
-        android:layout_width="2px"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_toRightOf="@id/btn_back"
-        android:background="#2E2E32" />
+    <!--<View-->
+        <!--android:layout_width="2px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_toRightOf="@id/btn_back"-->
+        <!--android:background="#2E2E32" />-->
 
     <TextView
         android:id="@+id/tv_des"
@@ -33,7 +33,7 @@
         android:text="图片"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textSize="18sp"
-        android:textColor="#ffffff" />
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/btn_ok"
@@ -43,7 +43,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/selector_top_ok"
+        android:background="#00BFFF"
         android:minHeight="30dp"
         android:minWidth="48dp"
         android:paddingRight="16.0dp"

@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -289,14 +290,14 @@ public class ImageGridActivity extends ImageBaseActivity implements ImageDataSou
             mBtnOk.setEnabled(true);
             mBtnPre.setEnabled(true);
             mBtnPre.setText(getResources().getString(R.string.ip_preview_count, imagePicker.getSelectImageCount()));
-            mBtnPre.setTextColor(ContextCompat.getColor(this, R.color.ip_text_primary_inverted));
+            mBtnPre.setTextColor(Color.BLACK);
             mBtnOk.setTextColor(ContextCompat.getColor(this, R.color.ip_text_primary_inverted));
         } else {
             mBtnOk.setText(getString(R.string.ip_complete));
             mBtnOk.setEnabled(false);
             mBtnPre.setEnabled(false);
             mBtnPre.setText(getResources().getString(R.string.ip_preview));
-            mBtnPre.setTextColor(ContextCompat.getColor(this, R.color.ip_text_secondary_inverted));
+            mBtnPre.setTextColor(Color.parseColor("#D3D3D3"));
             mBtnOk.setTextColor(ContextCompat.getColor(this, R.color.ip_text_secondary_inverted));
         }
 //        mImageGridAdapter.notifyDataSetChanged();
